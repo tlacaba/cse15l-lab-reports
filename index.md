@@ -12,13 +12,13 @@ I like using [github](https://github.com/).
 
 > This is a blockquote
 
-* I can also list things
+I can also list things
 * like this
 * and that
 
-1. Sometimes the list needs order
-2. like that
-3. or this
+Sometimes the list needs order
+1. like that
+2. or this
 
 And divisions like this:
 ---
