@@ -1,4 +1,4 @@
-# Remotely Connecting to a Computer with SSH!
+# Lab Report 2 - Week 1: Remotely Connecting to a Computer with SSH!
 
 In this tutorial we will cover:
 
