@@ -23,7 +23,7 @@ Here I logged into SSH:
 
 ![Image](/LoggingIntoSSH.png)
 
- I also already had this installed.
+ I also already had SSH installed.
 
 ## Using Commands
 Now that you're logged in, you can use some commands to explore the directory, such as `pwd`, `ls`, `cd`, etc. Here I used the former two:
@@ -35,12 +35,14 @@ In order to move files to your remote computer, you need to use the `scp` comman
 ``` scp filename.java username@iget6.ucsd.edu:~\```  
 where "filename" is the file you would like to move, the file extension can be anything you want, "username" is your own username, and after the ":", you can specify the file path in the server you want to save to. This command will prompt you for your password. 
 
-Here, I copied over, compiled, and used WhereAmI.java.
+Here, I copied over, compiled, and used WhereAmI.java:
 
 ![Image](/MovingFiles.png)
 
 ## Setting an SSH Key
-To surmise what needs to be done: We need to obtain a public and private key file. Send the public key file to .ssh/authorized_keys on the server, and keep the public key for our use. Go with the default algorithm and file path. Here I log in without having to fill out my password.
+To surmise what needs to be done: We need to obtain a public and private key file. Send the public key file to .ssh/authorized_keys on the server, and keep the public key for our use. Go with the default algorithm and file path. 
+
+Here I log in without having to fill out my password:
 
 ![Image](/LogInWOPW.png)
 
