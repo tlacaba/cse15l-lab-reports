@@ -19,11 +19,9 @@ You can download the installer for VSCode [here](https://code.visualstudio.com/)
 ## Remotely Connecting
 We will need to install [OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). Once you have that installed, open VSCode, and you will need to use the `ssd` command followed by your username. For this course, the username will be cs15lfa22##@igetc.ucsd.edu, where the two pound symbols are two alphabetic letters, and you will enter your password when prompted. 
 
-Here I logged into SSH:
+I also already had SSH installed, so here I logged into SSH:
 
 ![Image](/LoggingIntoSSH.png)
-
- I also already had SSH installed.
 
 ## Using Commands
 Now that you're logged in, you can use some commands to explore the directory, such as `pwd`, `ls`, `cd`, etc. Here I used the former two:
@@ -40,9 +38,9 @@ Here, I copied over, compiled, and used WhereAmI.java:
 ![Image](/MovingFiles.png)
 
 ## Setting an SSH Key
-To surmise what needs to be done: We need to obtain a public and private key file. Send the public key file to .ssh/authorized_keys on the server, and keep the public key for our use. Go with the default algorithm and file path. 
+To surmise what needs to be done: We need to obtain a public and private key file with `ssh-keygen`. Send the public key file to .ssh/authorized_keys on the server, and keep the public key for our use. Go with the default file path. You can also specify the encryption for generating the key, but we'll ignore that. 
 
-Here I log in without having to fill out my password:
+Additional steps are required to secure your private key on windows, but I already did those and set up my key, so I'll just show me logging in without having to fill out my password:
 
 ![Image](/LogInWOPW.png)
 
