@@ -44,9 +44,21 @@ Here, I copied over, compiled, and used WhereAmI.java:
 ![Image](/MovingFiles.png)
 
 ## Setting an SSH Key
-To surmise what needs to be done: We need to obtain a public and private key file with `ssh-keygen`. Send the public key file to .ssh/authorized_keys on the server, and keep the public key for our use. Go with the default file path. You can also specify the encryption for generating the key, but we'll ignore that. 
+Having to always input your password will start to become a hassle, so to circumvent this, we will make use of SSH keys. We first need to obtain a public and private key file with the `ssh-keygen` command on our local clients. Select the default path for the key file to save in, and enter in a passphrase. The default path should be `/Users/YOUR_USER/.ssh/id_rsa`. Since I am on Windows, I needed to perform the additional step of using `ssh-add`.
 
-Additional steps are required to secure your private key on windows, but I already did those and set up my key, so I'll just show me logging in without having to fill out my password:
+Make sure you are running a Powershell as an administrator. In this terminal, you will input the following commands:
+```
+Get-Service ssh-agent | Set-Service -StartupType Automatic
+
+Start-Service ssh-agent
+
+Get-Service ssh-agent
+
+ssh-add $env:YOUR_USER\.ssh\id_rsa
+```
+From here, you're going to want to sign into the remote computer, make an .ssh directory with `mkdir .ssh`, then sign back out and send the public key file to .ssh/authorized_keys on the remote computer with `scp`. We will keep the private key for our own use.
+
+Here's me logging in without having to fill out my password:
 
 ![Image](/LogInWOPW.png)
 
