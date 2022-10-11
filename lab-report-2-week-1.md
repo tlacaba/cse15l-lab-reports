@@ -56,6 +56,8 @@ Get-Service ssh-agent
 
 ssh-add $env:YOUR_USER\.ssh\id_rsa
 ```
+Here is a [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation) that will describe the process of using `ssh-add` in more detail, but note that there is some deviation there from what you yourself may see or what you will be doing that can confuse you.
+
 From here, you're going to want to sign into the remote computer, make an .ssh directory with `mkdir .ssh`, then sign back out and send the public key file to .ssh/authorized_keys on the remote computer with `scp`. We will keep the private key for our own use.
 
 Here's me logging in without having to fill out my password:
