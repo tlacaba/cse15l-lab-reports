@@ -17,7 +17,7 @@ You can download the installer for VSCode [here](https://code.visualstudio.com/)
 ![Image](/VSCodeInstaller.png)
 
 ## Remotely Connecting
-We will need to install [OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). Once you have that installed, open VSCode, and you will need to use the `ssd` command followed by your username. For this course, the username will be cs15lfa22##@igetc.ucsd.edu, where the two pound symbols are two alphabetic letters, and you will enter your password when prompted. 
+We will need to install [OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). Once you have that installed, open VSCode, and you will need to use the `ssh` command followed by your username. For this course, the username will be cs15lfa22##@igetc.ucsd.edu, where the two pound symbols are two alphabetic letters, and you will enter your password when prompted. 
 
 I also already had SSH installed, so here I logged into SSH:
 
@@ -27,6 +27,12 @@ I also already had SSH installed, so here I logged into SSH:
 Now that you're logged in, you can use some commands to explore the directory, such as `pwd`, `ls`, `cd`, etc. Here I used the former two:
 
 ![Image](/UsingCommands.png)
+
+Here's what these commands did:
+
+* `pwd`: prints the working directory.
+* `ls`: lists files in the working directory.
+* `exit`: signs you out of the remotely accessed computer.
 
 ## Moving Files with `scp`
 In order to move files to your remote computer, you need to use the `scp` command. The structure of `scp` is as follows:  
