@@ -70,11 +70,17 @@ Within the `Handler` class, there is a method called `handleRequest` that handle
 With the `/add` path, the program handles the query following the `s=` as a String that is to be added to the `searches` ArrayList. Here, I added several strings to `searches`:
 
 ![Image](/addfire.png)
+This path called the `handleRequest` method, with the URL as it's argument. With the `/add` path, the program handles the query following the `s=` as a String that is to be added to the `searches` ArrayList. In this case, we've added "fire" to the `searches` ArrayList.
 ![Image](/addburn.png)
+This path called the `handleRequest` method, with the URL as it's argument. With the `/add` path, the program handles the query following the `s=` as a String that is to be added to the `searches` ArrayList. In this case, we've added "burn" to the `searches` ArrayList.
 ![Image](/addfirefight.png)
+This path called the `handleRequest` method, with the URL as it's argument. With the `/add` path, the program handles the query following the `s=` as a String that is to be added to the `searches` ArrayList. In this case, we've added "firefight" to the `searches` ArrayList.
 ![Image](/addfirewall.png)
+This path called the `handleRequest` method, with the URL as it's argument. With the `/add` path, the program handles the query following the `s=` as a String that is to be added to the `searches` ArrayList. In this case, we've added "firewall" to the `searches` ArrayList.
 ![Image](/addsupahotfire.png)
+This path called the `handleRequest` method, with the URL as it's argument. With the `/add` path, the program handles the query following the `s=` as a String that is to be added to the `searches` ArrayList. In this case, we've added "supahotfire" to the `searches` ArrayList.
 ![Image](/addsupahotfye.png)
+This path called the `handleRequest` method, with the URL as it's argument. With the `/add` path, the program handles the query following the `s=` as a String that is to be added to the `searches` ArrayList. In this case, we've added "supahotfye" to the `searches` ArrayList.
 
 The additional function of the page is that I can then search through `searches` to find any String that contains whatever query I search for.
 
