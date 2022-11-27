@@ -1,4 +1,4 @@
-# Week 9 Lab Report: Vim
+# Week 9 Lab Report: Auto-Grader
 
 In this week's lab, we will demonstrate an implementation of a webpage auto-grader made with what we've learned in CSE 15L. This includes the use of terminal commands, creation of bash scripts, URL handling, testing, and more.
 
