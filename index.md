@@ -7,6 +7,8 @@
 * [Lab Report 2 - Week 3](/lab-report-2-week-3.md)
 * [Lab Report 3 - Week 5](/lab-report-3-week-5.md)
 * [Lab Report 4 - Week 7](/lab-report-4-week-7.md)
+* [Lab Report 5 - Week 9](/lab-report-5-week-9.md)
+
 
 ---
 
