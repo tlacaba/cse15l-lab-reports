@@ -16,25 +16,25 @@ In the file `DocSearchServer.java` on an remote ssh server, change the name of t
 
 Upon opening the document in Vim, the following keystrokes will edit the text file as desired.
 
-* Keystrokes: /star\<ENTER>cebase\<ESC>n.n.n.:wq\<ENTER>
+* Keystrokes: `/star<ENTER>cebase<ESC>n.n.n.:wq<ENTER>`
 
 Let's dissect what is going on here:
 
-* **The function of '/':** in normal mode (the mode that Vim starts in), typing '/' will allow you to enter a pattern that Vim will search for and find within the file. Pressing \<ENTER> will exit you from the search, moving your cursor to the location shown in the "search mode" (not really a mode). 
+* **The function of `'/'`:** in normal mode (the mode that Vim starts in), typing `'/'` will allow you to enter a pattern that Vim will search for and find within the file. Pressing `<ENTER>` will exit you from the search, moving your cursor to the location shown in the "search mode" (not really a mode). 
 
-* So, the sequence of typing '/', "star", and pressing \<ENTER> will move the cursor to the location of "start". In this case, we typed: "star", which led us to the first location in which the pattern "star" is found in the file. We didn't need to type "start" in it entirety since, the only occurences of "star" are the occurrences of "start". 
+* So, the sequence of typing `'/'`, `star`, and pressing `<ENTER>` will move the cursor to the location of "start". In this case, we typed: "star", which led us to the first location in which the pattern "star" is found in the file. We didn't need to type "start" in it entirety since the only occurences of "star" are those within the occurrences of "start". 
 
 ![Image](/vimslashsearch.png)
 
-* **The function of 'c' and 'e':** in normal mode, typing 'c' should be followed by a "vim motion". From the current cursor location to the location reached by the motion, all characters will be deleted and put the editor in INSERT mode (the mode in which you can type in the conventional sense). In this case, 'e' goes to the end of the current word (to the next white space, in essence).
+* **The function of `c` and `e`:** in normal mode, typing `c` should be followed by a "vim motion". From the current cursor location to the location reached by the motion, all characters will be deleted and put the editor in INSERT mode (the mode in which you can type in the conventional sense). In this case, `e` goes to the end of the current word (to the next white space, in essence).
 
-* So, the sequence of typing 'c', 'e', "base" will delete the entire word (in this case, the word "start"), and replace it with base. \<ESC> will return you from INSERT mode. 
+* So, the sequence of typing `c`, `e`, `base` will delete the entire word (in this case, the word "start"), and replace it with base. `<ESC>` will return you from INSERT mode. 
 
 ![Image](/vimReplaceWord.png)
 
-* **The function of 'n' and '.':** following the use of '/' to search for a pattern, 'n' can be used to move your cursor to other occurrences of the last pattern searched. Following a contiguous series of edits, '.' can be used to repeat the same edits for the current location your cursor is at. ![]
+* **The function of `n` and `.`:** following the use of `'/'` to search for a pattern, `n` can be used to move your cursor to other occurrences of the last pattern searched. Following a contiguous series of edits, `'.'` can be used to repeat the same edits for the current location your cursor is at.
 
-* So the series of three 'n' and '.''s will move your cursor to each occurrence of "start" and replace it with base.
+* So the series of three `n` and `'.'`'s will move your cursor to each occurrence of "start" and replace it with base.
 
 ![Image](/vimNDot1.png)
 
@@ -44,7 +44,7 @@ Let's dissect what is going on here:
 
 ![Image](/vimNDot4.png)
 
-* And finally, ':' lets you open a prompt for various commands, one of which is "wq", which *writes* (saves) and *quits* (exits) the file. \<ENTER> will input the command.
+* And finally, `:` lets you open a prompt for various commands, one of which is `wq`, which *writes* (saves) and *quits* (exits) the file. `<ENTER>` will input the command.
 
 ## Comparing to VS Code
 
