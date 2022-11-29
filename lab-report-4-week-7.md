@@ -20,9 +20,9 @@ Upon opening the document in Vim, the following keystrokes will edit the text fi
 
 Let's dissect what is going on here:
 
-* **The function of `'/'`:** in normal mode (the mode that Vim starts in), typing `'/'` will allow you to enter a pattern that Vim will search for and find within the file. Pressing `<ENTER>` will exit you from the search, moving your cursor to the location shown in the "search mode" (not really a mode). 
+* **The function of `/`:** in normal mode (the mode that Vim starts in), typing `/` will allow you to enter a pattern that Vim will search for and find within the file. Pressing `<ENTER>` will exit you from the search, moving your cursor to the location shown in the "search mode" (not really a mode). 
 
-* So, the sequence of typing `'/'`, `star`, and pressing `<ENTER>` will move the cursor to the location of "start". In this case, we typed: "star", which led us to the first location in which the pattern "star" is found in the file. We didn't need to type "start" in it entirety since the only occurences of "star" are those within the occurrences of "start". 
+* So, the sequence of typing `/`, `star`, and pressing `<ENTER>` will move the cursor to the location of "start". In this case, we typed: "star", which led us to the first location in which the pattern "star" is found in the file. We didn't need to type "start" in it entirety since the only occurences of "star" are those within the occurrences of "start". 
 
 ![Image](/vimslashsearch.png)
 
@@ -32,9 +32,9 @@ Let's dissect what is going on here:
 
 ![Image](/vimReplaceWord.png)
 
-* **The function of `n` and `.`:** following the use of `'/'` to search for a pattern, `n` can be used to move your cursor to other occurrences of the last pattern searched. Following a contiguous series of edits, `'.'` can be used to repeat the same edits for the current location your cursor is at.
+* **The function of `n` and `.`:** following the use of `/` to search for a pattern, `n` can be used to move your cursor to other occurrences of the last pattern searched. Following a contiguous series of edits, `.` can be used to repeat the same edits for the current location your cursor is at.
 
-* So the series of three `n` and `'.'`'s will move your cursor to each occurrence of "start" and replace it with base.
+* So the series of three `n` and `.`'s will move your cursor to each occurrence of "start" and replace it with base.
 
 ![Image](/vimNDot1.png)
 
